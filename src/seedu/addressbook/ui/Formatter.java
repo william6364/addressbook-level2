@@ -16,7 +16,7 @@ public class Formatter {
     private static final String MESSAGE_INDEXED_LIST_ITEM = "\t%1$d. %2$s";
 
     /** Format welcome message to be shown to the user */
-    public static String formatAsWelcomeMessage(String version, String storageFilePath) {
+    public static String formatWelcomeMessage(String version, String storageFilePath) {
         String storageFileInfo = String.format(MESSAGE_USING_STORAGE_FILE, storageFilePath);
         return formatMessage(
                 DIVIDER,
@@ -29,12 +29,12 @@ public class Formatter {
     }
 
     /** Format goodbye message to be shown to the user */
-    public static String formatAsGoodbyeMessage() {
+    public static String formatGoodbyeMessage() {
         return formatMessage(MESSAGE_GOODBYE, DIVIDER, DIVIDER);
     }
 
     /** Format initialisation failed message to be shown to the user */
-    public static String formatAsInitFailedMessage() {
+    public static String formatInitFailedMessage() {
         return formatMessage(MESSAGE_INIT_FAILED, DIVIDER, DIVIDER);
     }
 
