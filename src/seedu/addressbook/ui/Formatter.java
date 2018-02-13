@@ -1,8 +1,6 @@
 package seedu.addressbook.ui;
 
-import static seedu.addressbook.common.Messages.MESSAGE_PROGRAM_LAUNCH_ARGS_USAGE;
-import static seedu.addressbook.common.Messages.MESSAGE_USING_STORAGE_FILE;
-import static seedu.addressbook.common.Messages.MESSAGE_WELCOME;
+import static seedu.addressbook.common.Messages.*;
 
 public class Formatter {
 
@@ -18,7 +16,7 @@ public class Formatter {
     private static final String MESSAGE_INDEXED_LIST_ITEM = "\t%1$d. %2$s";
 
     /** Format welcome message to be shown to the user */
-    public static String showWelcomeMessage(String version, String storageFilePath) {
+    public static String formatAsWelcomeMessage(String version, String storageFilePath) {
         String storageFileInfo = String.format(MESSAGE_USING_STORAGE_FILE, storageFilePath);
         return formatMessage(
                 DIVIDER,
@@ -30,6 +28,15 @@ public class Formatter {
                 DIVIDER);
     }
 
+    /** Format goodbye message to be shown to the user */
+    public static String formatAsGoodbyeMessage() {
+        return formatMessage(MESSAGE_GOODBYE, DIVIDER, DIVIDER);
+    }
+
+    /** Format initialisation failed message to be shown to the user */
+    public static String formatAsInitFailedMessage() {
+        return formatMessage(MESSAGE_INIT_FAILED, DIVIDER, DIVIDER);
+    }
 
     /** Format message(s) to be shown to the user */
     public static String formatMessage(String... message) {
