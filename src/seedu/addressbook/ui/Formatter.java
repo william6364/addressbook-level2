@@ -7,6 +7,9 @@ import java.util.List;
 
 import static seedu.addressbook.common.Messages.*;
 
+/**
+ * Formats text to be displayed to the user
+ */
 class Formatter {
 
     /** A decorative prefix added to the beginning of lines printed by AddressBook */
