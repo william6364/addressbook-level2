@@ -21,11 +21,4 @@ public class Email extends Contact {
     public Email(String email, boolean isPrivate) throws IllegalValueException {
         super(email, isPrivate, EMAIL_VALIDATION_REGEX, MESSAGE_EMAIL_CONSTRAINTS);
     }
-
-    @Override
-    public boolean equals(Object other) {
-        return other == this // short circuit if same object
-                || (other instanceof Email // instanceof handles nulls
-                && this.value.equals(((Email) other).value)); // state check
-    }
 }

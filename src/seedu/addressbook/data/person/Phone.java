@@ -20,5 +20,4 @@ public class Phone extends Contact {
     public Phone(String phone, boolean isPrivate) throws IllegalValueException {
         super(phone, isPrivate, PHONE_VALIDATION_REGEX, MESSAGE_PHONE_CONSTRAINTS);
     }
-
 }
