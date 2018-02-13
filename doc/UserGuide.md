@@ -77,6 +77,12 @@ Examples:
 * `list`<br>
   `delete 2`<br>
   Deletes the 2nd person in the address book.
+* `add John Doe p/98765432 e/johnd@gmail.com a/John street, block 123, #01-01 `<br>
+  `delete 2`<br>
+  Deletes the 2nd person in the address book as listed after the `add` command.
+* `delete 2`<br>
+  `delete 2`<br>
+  Deletes the 2nd person in the address book then delete the 2nd person according to the list printed after the `delete` command.
 * `find Betsy`<br> 
   `delete 1`<br>
   Deletes the 1st person in the results of the `find` command.
@@ -92,6 +98,12 @@ Examples:
 * `list`<br>
   `view 2`<br>
   Views the 2nd person in the address book.
+* `add John Doe p/98765432 e/johnd@gmail.com a/John street, block 123, #01-01 `<br>
+  `view 1`<br>
+  Views the 1st person in the address book as listed after the `add` command.
+* `delete 2`<br>
+  `view 1`<br>
+  Views the 1st person in the address book then delete the 2nd person according to the list printed after the `delete` command.
 * `find Betsy` <br> 
   `view 1`<br>
   Views the 1st person in the results of the `find` command.
@@ -107,6 +119,12 @@ Examples:
 * `list`<br>
   `viewall 2`<br>
   Views all details of the 2nd person in the address book.
+* `add John Doe p/98765432 e/johnd@gmail.com a/John street, block 123, #01-01 `<br>
+  `viewall 1`<br>
+  Views all details of the 1st person in the address book as listed after the `add` command.
+* `delete 2`<br>
+  `viewall 1`<br>
+  Views all details of the 1st person in the address book then delete the 2nd person according to the list printed after the `delete` command.
 * `find Betsy`<br> 
   `viewall 1`<br>
   Views all details of the 1st person in the results of the `find` command.
